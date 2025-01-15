@@ -1,0 +1,169 @@
+/* Genel Profil Sayfası */
+.profile-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.profile-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Profil Bilgileri Bölümü */
+.profile-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.profile-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.profile-info .update-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-info .update-btn:hover {
+  background-color: #45a049;
+}
+
+/* Profil Güncelleme Formu */
+.update-profile-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-profile-form .input-group {
+  margin-bottom: 15px;
+}
+
+.update-profile-form label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.update-profile-form input[type="text"],
+.update-profile-form input[type="email"],
+.update-profile-form input[type="password"],
+.update-profile-form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.update-profile-form input[type="file"] {
+  padding: 3px;
+}
+
+.update-profile-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Profil güncelleme butonuyla arasındaki boşluk */
+}
+
+.update-profile-form button:hover {
+  background-color: #45a049;
+}
+
+.update-profile-form .back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.update-profile-form .back-btn:hover {
+  text-decoration: underline;
+}
+
+/* Mesajlar */
+.message {
+  font-size: 1rem;
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #4caf50;
+}
+
+/* Çıkış Yap Butonu - Kırmızı */
+.profile-buttons button[type="button"] {
+  background-color: #e53935; /* Kırmızı renk */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Profil güncelleme butonuyla arasındaki boşluk */
+  width: fit-content;
+}
+
+.profile-buttons button[type="button"]:hover {
+  background-color: #c62828; /* Koyu kırmızı hover */
+}
+
+.profile-buttons button[type="button"]:focus {
+  outline: none;
+}

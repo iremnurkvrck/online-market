@@ -1,0 +1,27 @@
+.box {
+  padding: 2rem;
+  text-align: center;
+  border: var(--border);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.box p {
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 0.5rem 0;
+}

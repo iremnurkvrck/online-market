@@ -1,0 +1,35 @@
+.total {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+#onay {
+  position: relative; /* Sabit konumda olacak */
+  left: 50%; /* Yatayda ortalamak için */
+  transform: translateX(-50%); /* Butonu yatayda tam ortalamak için */
+  width: 300px; /* Butonun genişliği */
+  height: 50px; /* Butonun yüksekliği */
+  font-size: 14px; /* Yazı boyutu */
+  padding: 5px 10px; /* İç boşluk */
+  border: 1px solid #ccc; /* İnce bir kenarlık */
+  background-color: #4caf50; /* Yeşil arka plan */
+  color: white; /* Beyaz yazı */
+  border-radius: 5px; /* Yuvarlak köşeler */
+  cursor: pointer; /* Fare ile üzerine gelince pointer imleci */
+  transition: background-color 0.3s ease; /* Hover efekti için geçiş */
+  display: flex; /* Flexbox ile içeriği ortalayacağız */
+  justify-content: center; /* Yatayda ortalamak için */
+  align-items: center; /* Dikeyde ortalamak için */
+  text-align: center; /* Yazıyı merkezle */
+}
+
+#onay:hover {
+  background-color: #45a049; /* Hoverda yeşil ton değişimi */
+}

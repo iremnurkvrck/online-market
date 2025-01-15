@@ -1,0 +1,70 @@
+/* Genel container */
+.orders-list {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Siparişler listesi konteyneri */
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Her bir sipariş kutusu */
+.order-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* Başlıkların stilini özelleştirme */
+.order-item p:nth-child(1) {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Sipariş bilgileri kutusundaki metinler */
+.order-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.order-item p span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Yükleniyor ve hata mesajları */
+p {
+  text-align: center;
+  color: #d9534f;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Boş sipariş durumu */
+.orders-list p {
+  color: #777;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}

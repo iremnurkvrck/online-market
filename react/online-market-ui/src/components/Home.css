@@ -1,0 +1,93 @@
+@import url("../index.css");
+
+.home-bg .home {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  background: url(../assets/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 60px;
+}
+
+.home-bg .home .content {
+  width: 50rem;
+}
+
+.home-bg .home .content span {
+  color: var(--orange);
+  font-size: 2.5rem;
+}
+
+.home-bg .home .content h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  color: var(--black);
+}
+
+.home-bg .home .content p {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: var(--light-color);
+}
+
+.home-bg .home .content a {
+  display: inline-block;
+  width: auto;
+}
+
+.flex-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-btn > * {
+  flex: 1;
+}
+
+.btn {
+  background-color: var(--green);
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover {
+  background-color: var(--black);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 1.3rem 3rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+}
+
+.home-category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 27rem);
+  gap: 1.5rem;
+  justify-content: center;
+  height: 55rem; /* Her bir kutu için sabit yükseklik */
+  align-items: stretch; /* Öğelerin aynı yüksekliğe sahip olmasını sağlar */
+}
+
+.home-category {
+  padding-bottom: 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 3.5rem;
+}

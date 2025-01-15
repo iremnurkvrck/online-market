@@ -1,0 +1,40 @@
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.01rem; /* Aralık biraz daha geniş tutuldu */
+  align-items: center;
+}
+
+.about .row .box {
+  flex: 1 1 400px; /* Box'ların genişliği 350px olacak */
+  text-align: center;
+  max-width: 600px; /* Box'ların maksimum genişliği 400px'e çıkarıldı */
+  margin: 0 auto; /* Ortalanmış */
+}
+
+.about .row .box img {
+  margin-bottom: 1.8rem; /* Resim altı boşluk hafif arttırıldı */
+  height: 30rem; /* Resim boyutları sabit kaldı */
+  object-fit: cover; /* Resim düzgün şekilde kesilir */
+}
+
+.about .row .box h3 {
+  padding: 1rem 0; /* Başlık etrafındaki boşluk biraz arttırıldı */
+  font-size: 2.2rem; /* Başlık fontu biraz büyütüldü */
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.about .row .box p {
+  line-height: 1.8; /* Satır yüksekliği biraz daha sıkıştırıldı */
+  font-size: 1.4rem; /* Paragraf fontu arttırıldı */
+  color: var(--light-color);
+  padding: 1rem 0; /* Paragraf etrafındaki boşluk arttırıldı */
+}
+
+.about .row .box .btn {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px; /* Buton boyutu biraz büyütüldü */
+  font-size: 2rem; /* Buton fontu biraz büyütüldü */
+}

@@ -1,0 +1,136 @@
+.products-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products-box-container .box {
+  padding: 2rem;
+  text-align: center;
+  border: var(--border);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  position: relative;
+  height: 55rem; /* Her bir kutu için sabit yükseklik */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.products-box-container .price {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--red);
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.products-box-container img {
+  width: 100%;
+  height: 25rem; /* Sabit yükseklik */
+  object-fit: cover; /* Resmin kutuya sığmasını sağlar */
+  margin-bottom: 1rem;
+}
+
+.products-box-container .name {
+  font-size: 2rem;
+  color: var(--black);
+  padding: 1rem 0;
+  flex-grow: 1; /* Ürün adı kısmının kutuyu doldurmasını sağlar */
+}
+
+.products-box-container .box .price span {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin: 0 0.2rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 3.5rem;
+}
+
+.wishlist-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  border: var(--border);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 35rem;
+  position: relative; /* Burada position: relative ekleyerek z-index'in çalışmasını sağlıyoruz */
+}
+
+.bi-eye {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.3rem;
+  width: 5rem;
+  border: var(--border);
+  color: var(--black);
+  font-size: 2rem;
+  background-color: var(--white);
+  z-index: 100; /* z-index'i yüksek tutarak üstte görünmesini sağlıyoruz */
+}
+
+.bi-eye:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.wishlist-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--light-gray);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  object-fit: cover; /* Resmi kutuya sığdır */
+}
+
+.option-btn {
+  background-color: var(--orange);
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover {
+  background-color: var(--black);
+}
+.btn,
+.delete-btn,
+.option-btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-size: 2rem;
+  padding: 1.3rem 3rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align: center;
+}

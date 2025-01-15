@@ -1,0 +1,79 @@
+.header .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: #666;
+}
+
+.header .flex .navbar a:hover {
+  text-decoration: underline;
+  color: #27ae60;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: #333;
+}
+.header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+/* Profil linki ve çıkış butonu */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  position: relative;
+}
+
+.profile a {
+  margin-right: 10px;
+  font-weight: bold;
+  text-decoration: none; /* Linklerin altını çizmez */
+  color: #000; /* Siyah renk */
+}
+
+.profile a:hover {
+  color: #007bff; /* Hover sırasında mavi renge dönüşür */
+}
+
+/* Profil seçenekleri */
+.profile-options {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.profile-options button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.profile-options button:hover {
+  background-color: #e60000;
+}
